@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Object Properties</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const object1 = {};
+		Object.defineProperties(object1, {
+			'name': {value: "Amit", writable: false},
+			'age':{value: 25, writable: false}
+		});
+		document.write("<h3>The Object.defineProperties() method defines new or modifies existing properties directly on an object, returning the object.</h3>");
+		document.write("My name is "+object1.name+" and my age is:"+object1.age);
+	</script>
+</body>
+</html>

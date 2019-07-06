@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>endsWith()</title>
+</head>
+<body>
+	<h1>String endsWith() Method</h1>
+	<h3>
+		The endsWith() method determines whether a string ends with the characters of a specified string. <br>
+		This method returns true if the string ends with the characters, and false if not. <br>
+		Note: The endsWith() method is case sensitive.
+	</h3>
+	<p>Click the button to check where if the string ends with the specified value.</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<p><strong>Note:</strong> The endsWith() method is not supported in IE 11 (and earlier versions).</p>
+
+	<script>
+	function myFunction() {
+	  var str = "Hello world, welcome to the universe.";
+	  var n = str.endsWith("universe.");
+	  document.getElementById("demo").innerHTML = n;
+	}
+	</script>
+</body>
+</html>

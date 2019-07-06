@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>isFinite()</title>
+</head>
+<body>
+	<h1>The isFinite() function returns false if the value is +infinity, -infinity, or NaN, otherwise it returns true.</h1>
+
+	<p>Click the button to check whether a number is a finite, legal number.</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<script>
+	function myFunction() {
+	  var a = isFinite(123) + "<br>";
+	  var b = isFinite(-1.23) + "<br>";
+	  var c = isFinite(5-2) + "<br>";
+	  var d = isFinite(0) + "<br>";
+	  var e = isFinite("123") + "<br>";
+	  var f = isFinite("Hello") + "<br>";
+	  var g = isFinite("2005/12/12");
+
+	  var res = a + b + c + d + e + f + g;
+	  document.getElementById("demo").innerHTML = res;
+	}
+	</script>
+</body>
+</html>

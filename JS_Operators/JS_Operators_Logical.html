@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Logical Operators</title>
+	<style>
+		#disp{
+			background-color: seagreen;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h3>Logical operators are used to determine the logic between variables or values</h3>
+		<div id="disp">
+			<h1 id="display"></h1>
+		</div>
+		<br><br><br>
+		<div align="center">
+			<button onclick="f1()">&& Check</button><br><br>
+			<button onclick="f2()">|| Check</button><br><br>
+			<button onclick="f3()">! Check</button><br><br>
+		</div>
+</body>
+		<script>
+		function f1() {
+			var output;
+		    var x = 5;
+		    var y = 6;
+		    if(x > 10 && y > 10){
+		    	output = "Both 5 and 6 are Greater than 10";
+		    }
+		    else{
+		    	output = "Both 5 and 6 are Smaller than 10";
+		    }
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function f2() {
+			var output;
+		    var x = 5;
+		    var y = 12;
+		    if(x > 10 || y > 10){
+		    	output = "5 or 12 is greater than 10";
+		    }
+		    else{
+		    	output = "Both 5 and 12 are smaller than 10";
+		    }
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function f3() {
+			var output;
+		    var x = 5;
+		    var y = 6;
+		    output = !(x<y);
+		    document.getElementById('display').innerHTML = output;
+		}
+		</script>
+</html>

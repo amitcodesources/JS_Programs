@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>toString()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Dog(name) {
+		  this.name = name;
+		}
+
+		dog1 = new Dog('Gabby');
+
+		Dog.prototype.toString = function dogToString() {
+		  return this.name;
+		}
+
+		console.log(dog1.toString());
+		// expected output: "Gabby"
+	</script>
+</body>
+</html>

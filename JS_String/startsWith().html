@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>startsWith()</title>
+</head>
+<body>
+	<h1>String startsWith() Method</h1>
+	<h3>
+		The startsWith() method determines whether a string begins with the characters of a specified string. <br>
+		This method returns true if the string begins with the characters, and false if not. <br>
+		Note: The startsWith() method is case sensitive.
+	</h3>
+	<p>Click the button to check where if the string starts with the specified value.</p>
+
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<p><strong>Note:</strong> The startsWith() method is not supported in IE 11 (and earlier versions).</p>
+
+	<script>
+	function myFunction() {
+	  var str = "Hello world, welcome to the universe.";
+	  var n = str.startsWith("Hello");
+	  document.getElementById("demo").innerHTML = n;
+	}
+	</script>
+</body>
+</html>

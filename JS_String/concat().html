@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>concat()</title>
+</head>
+<body>
+	<h1>The concat() method joins two or more strings:</h1>
+    <p id="t1">Hello!</p>
+    <p id="t2">Amit</p>
+    <p id="demo"></p>
+    <button onclick="f()">Concat</button>
+
+    <script type="text/javascript">
+    	function f() {
+	        var str1 = document.getElementById("t1").innerHTML;
+	        var str2 = document.getElementById("t2").innerHTML;
+	        var text = str1.concat(" ",str2);
+	        document.getElementById("demo").innerHTML = text;
+	    }
+    </script>
+</body>
+</html>

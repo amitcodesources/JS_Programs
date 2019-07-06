@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object.isEmpty()</title>
+</head>
+<body>
+		<script type="text/javascript">
+
+			function isEmpty(obj){
+				for(var key in obj){
+					if(obj.hasOwnProperty(key)){
+						return false;
+					}
+				}
+				return true;
+			}
+
+			const object1 = {};
+			const object2 = {"name":"Amit"};
+
+			//console.log(Object.isEmpty(object1));
+			// expected output: false
+
+			if(isEmpty(object1)){
+				document.write('Object1 is Empty');
+			} else {
+				document.write('Object1 is Not Empty');
+			}
+			
+			if(isEmpty(object2)){
+				document.write('Object2 is Empty');
+			} else {
+				document.write('Object2 is Not Empty');
+			}
+		</script>
+</body>
+</html>

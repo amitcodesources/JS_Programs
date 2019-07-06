@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array unshift()</title>
+</head>
+<body>
+    <h3>The unshift() method adds new elements to the beginning of an array.</h3>
+    <p id="arr"></p>
+    <h3>The unshift() method returns the length of the new array:</h3>
+    <p id="arrLen"></p>
+    <p id="resArr"></p>
+    <button onclick="f()">After Unshift Item</button>
+
+    <script type="text/javascript">
+    	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    	document.getElementById("arr").innerHTML = fruits;
+    	function f() {
+	      document.getElementById("arrLen").innerHTML = "Length Of Array: "+ fruits.unshift("Lemon");
+	      document.getElementById("resArr").innerHTML = fruits;
+	    }
+    </script>
+</body>
+</html>

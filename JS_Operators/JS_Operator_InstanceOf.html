@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Operator InstanceOf</title>
+</head>
+<body>
+	<h3>The instanceof operator returns true if the specified object is an instance of the specified object</h3>
+	<script type="text/javascript">
+		var cities = ["Hyd", "Delhi"];
+		document.write("Cities is instance of Array: " +
+			(cities instanceof Array));
+
+		document.write("<br><br>");
+
+		var cars = ["Saab", "Volvo", "BMW"];
+		document.write((cars instanceof Array) + "<br>" + 
+    		(cars instanceof Object) + "<br>" +
+    		(cars instanceof String) + "<br>" +
+    		(cars instanceof Number));
+    
+	</script>
+</body>
+</html>

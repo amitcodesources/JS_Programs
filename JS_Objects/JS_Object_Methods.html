@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Object_Methods</title>
+</head>
+<body>
+<div align="center">
+    <h2>Creating a JavaScript Methods.</h2>
+    <hh3>The JavaScript <b>this</b> Keyword</hh3>
+    <p>In this example, <b>this</b> represents the <b>person</b> object.</p>
+    <p>Because the person object "owns" the fullName method.</p>
+    <p id="demo1"></p>
+
+    <h3>An object method is a function definition stored as a property value.</h3>
+    <p>If you access it without (), it will return the function definition:</p>
+    <p id="demo2"></p>
+
+    <h3>Creating and using an object method.</h3>
+    <p>A method is actually a function definition stored as a property value.</p>
+    <p id="demo3"></p>
+
+</div>
+
+<script>
+    var person = {
+        firstName : "John",
+        lastName  : "Doe",
+        age       : 50,
+        eyeColor  : "blue",
+        fullName : function() {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+
+    // Display data from the object:
+    document.getElementById("demo1").innerHTML = person.fullName();
+
+    document.getElementById("demo2").innerHTML = person.fullName;
+
+    document.getElementById("demo3").innerHTML = person.fullName();
+</script>
+</body>
+</html>

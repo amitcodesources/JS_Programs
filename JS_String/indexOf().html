@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>indexOf()</title>
+</head>
+<body>
+	<h1>JavaScript String Methods</h1>
+
+            <h3>Finding a String in a String By [.indexOf]</h3>
+            <p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+            <p id="demo1"></p>
+
+
+            <h3>Finding a String in a String By [.indexOf]</h3>
+            <p>The indexOf() method accepts a second parameter as the starting position for the search:</p>
+            <p id="demo2"></p>
+
+
+            <script type="text/javascript">
+
+                var str = "Please locate where 'locate' occurs!";
+
+
+            	var pos = str.indexOf("locate");
+                document.getElementById("demo1").innerHTML = pos;
+
+                var pos1 = str.indexOf("locate",15);
+                document.getElementById("demo2").innerHTML = pos1;
+                
+            </script>
+
+            
+
+</body>
+</html>

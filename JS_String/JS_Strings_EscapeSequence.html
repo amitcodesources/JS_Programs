@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Strings_EscapeSequence</title>
+</head>
+<body>
+            <h1>JavaScript Strings</h1>
+
+            <h3>The escape sequence \" inserts a double quote in a string.</h3>
+
+            <p id="demo1"></p>
+
+            <h3>The escape sequence \' inserts a single quote in a string.</h3>
+
+            <p id="demo2"></p>
+
+            <h3>The escape sequence \\ inserts a backslash in a string.</h3>
+
+            <p id="demo3"></p>
+
+            <h3>The escape sequence \b inserts a backspace in a string.</h3>
+
+            <p id="demo4"></p>
+
+            <script>
+
+                var x = "We are the so-called \"Vikings\" from the north.";
+                document.getElementById("demo1").innerHTML = x;
+
+                var y = 'It\'s alright.';
+                document.getElementById("demo2").innerHTML = y;
+
+                var z = "The character \\ is called backslash.";
+                document.getElementById("demo3").innerHTML = z;
+
+                var a = "The character \b is called backspace.";
+                document.getElementById("demo4").innerHTML = a;
+                //alert(a);
+
+
+            </script>
+</body>
+</html>

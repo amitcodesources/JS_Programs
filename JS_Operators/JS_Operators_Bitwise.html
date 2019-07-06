@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Bitwise Operators</title>
+	<style>
+		#dis{
+			background-color: seagreen;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h3>Bit operators work on 32 bits numbers. Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number.</h3>
+	<div id="dis">
+		<h1 id="display"></h1>
+	</div>
+	<br>
+	<div align="center">
+		<button onclick="f1()">Bitwise AND (&) 5 & 1</button><br><br>
+		<button onclick="f2()">Bitwise OR (|) 5 | 1</button><br><br>
+		<button onclick="f3()">Bitwise XOR (^) 5 ^ 1</button><br><br>
+		<button onclick="f4()">Bitwise NOT (~) ~5</button><br><br>
+		<button onclick="f5()">Bitwise Left Shift (<<) 5 << 1</button><br><br>
+		<button onclick="f6()">Bitwise Right Shift (>>) -5 >> 1</button><br><br>
+		<button onclick="f7()">Bitwise Right Shift (>>>) 5 >> 1</button><br><br>
+		<button onclick="dec2bin(-5)">Convert Decimal to Binary -5</button><br><br>
+		<button onclick="bin2dec(101)">Convert Binary to Decimal 101</button>
+	</div>
+</body>
+		<script>
+		var output;
+		function f1() {
+		    document.getElementById("display").innerHTML = 5 & 1;
+		}
+
+		function f2() {
+			document.getElementById("display").innerHTML = 5 | 1;
+		}
+
+		function f3() {
+			document.getElementById("display").innerHTML = 5 ^ 1;  
+		}
+
+		function f4() {
+			document.getElementById("display").innerHTML = ~ 5;
+		}
+
+		function f5() {
+			document.getElementById("display").innerHTML = 5 << 1;
+		}
+
+		function f6() {
+			document.getElementById("display").innerHTML = -5 >> 1;
+		}
+
+		function f7() {
+			document.getElementById("display").innerHTML = 5 >>> 1;
+		}
+
+		function dec2bin(dec){
+		    document.getElementById("display").innerHTML =  (dec >>> 0).toString(2);
+		}
+
+		function bin2dec(bin){
+		    document.getElementById("display").innerHTML = parseInt(bin, 2).toString(10);
+		}
+		</script>
+</html>

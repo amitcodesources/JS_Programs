@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS BOM Timming</title>
+</head>
+<body>
+		<h1>setTimeout(function, milliseconds)
+		Executes a function, after waiting a specified number of milliseconds.</h1>
+		<h1>The clearTimeout() method stops the execution of the function specified in setTimeout().</h1>	
+		<p>Click "Try it". Wait 3 seconds, and the page will alert "Hello".</p>
+		<p>Click "Stop" to prevent the first function to execute.</p>
+		<p>(You must click "Stop" before the 3 seconds are up.)</p>
+
+		<button onclick="myvar = setTimeout(f1, 3000)">Try it</button>
+		<button onclick="clearTimeout(myvar)">Stop it</button>
+
+		<h1>The setInterval() method repeats a given function at every given time-interval.</h1>
+		<h1>The clearInterval() method stops the executions of the function specified in the setInterval() method.</h1>
+		<p>A script on this page starts this clock:</p>
+		<p id="demo"></p>
+		<button onclick="clearInterval(tiVar)">Stop tTime</button>
+		
+
+
+		<script type="text/javascript">
+			function f1(){
+				alert("Hello...Amit");
+			}
+
+			var tiVar = setInterval(myTimer, 1000);
+			function myTimer() {
+			  var d = new Date();
+			  document.getElementById("demo").innerHTML = "<b>"+d.toLocaleTimeString()+"</b>";
+			}
+
+		</script>
+</body>
+</html>

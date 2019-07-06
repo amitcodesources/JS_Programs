@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>toLocaleLowerCase()</title>
+</head>
+<body>
+	<h3>
+		The toLocaleLowerCase() method returns the value of the string converted to lower case according to any locale-specific case mappings. toLocaleLowerCase() does not affect the value of the string itself. In most cases, this will produce the same result as toLowerCase(), but for some locales, such as Turkish, whose case mappings do not follow the default case mappings in Unicode, there may be a different result.
+	</h3>
+	<p>Click the button to convert the string to lowercase letters.</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<script>
+	function myFunction() {
+	  var str = "Hello World!";
+	  var res = str.toLocaleLowerCase();
+	  document.getElementById("demo").innerHTML = res;
+	}
+	</script>
+</body>
+</html>

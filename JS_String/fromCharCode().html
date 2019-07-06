@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fromCharCode()</title>
+</head>
+<body>
+	<h1>String fromCharCode() Method</h1>
+	<h3>
+		The fromCharCode() method converts Unicode values into characters. <br>
+		Note: This is a static method of the String object, and the syntax is always String.fromCharCode().
+	</h3>
+
+	<p id="demo1"></p>
+	<br>
+	<p id="demo2"></p>
+
+	<script>
+		var res1 = String.fromCharCode(65);
+	  	document.getElementById("demo1").innerHTML = res1;
+
+	  	var res2 = String.fromCharCode(72, 69, 76, 76, 79);
+  		document.getElementById("demo2").innerHTML = res2;
+	
+	</script>
+</body>
+</html>

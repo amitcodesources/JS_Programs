@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object.getOwnPropertyDescriptors()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<h3>The Object.getOwnPropertyDescriptors() method returns all own property descriptors of a given object.</h3>");
+		const object1 = {
+		  property1: 42
+		};
+
+		const descriptors1 = Object.getOwnPropertyDescriptors(object1);
+
+		document.write(descriptors1.property1.writable);
+		// expected output: true
+		document.write("<br>");
+		
+		document.write(descriptors1.property1.value);
+		// expected output: 42
+	</script>
+</body>
+</html>

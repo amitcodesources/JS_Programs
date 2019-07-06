@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object.getOwnPropertyNames()</title>
+</head>
+<body>	
+	<script type="text/javascript">
+		document.write("<h3>The Object.getOwnPropertyNames() method returns an array of all properties (including non-enumerable properties except for those which use Symbol) found directly in a given object.</h3>");
+		const object1 = {
+		  a: 1,
+		  b: 2,
+		  c: 3
+		};
+
+		console.log(Object.getOwnPropertyNames(object1));
+		// expected output: Array ["a", "b", "c"]
+		document.write(Object.getOwnPropertyNames(object1));
+
+	</script>
+</body>
+</html>

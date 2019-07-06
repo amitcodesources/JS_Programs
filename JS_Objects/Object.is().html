@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object.is()</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		document.write("The Object.is() method determines whether two values are the same value.");
+		console.log(Object.is('foo', 'foo'));     // true
+		console.log(Object.is(window, window));   // true
+
+		console.log(Object.is('foo', 'bar'));     // false
+		console.log(Object.is([], []));           // false
+
+		var foo = { a: 1 };
+		var bar = { a: 1 };
+		console.log(Object.is(foo, foo));         // true
+		console.log(Object.is(foo, bar));         // false
+
+		console.log(Object.is(null, null));       // true
+
+		// Special Cases
+		console.log(Object.is(0, -0));            // false
+		console.log(Object.is(-0, -0));           // true
+		console.log(Object.is(NaN, 0/0));         // true																		
+	</script>
+</body>
+</html>

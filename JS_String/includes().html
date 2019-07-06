@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>includes()</title>
+</head>
+<body>
+		<h1>String includes() Method</h1>
+		<h3>
+			The includes() method determines whether a string contains the characters of a specified string. <br>
+			This method returns true if the string contains the characters, and false if not. <br>
+			Note: The includes() method is case sensitive.
+		</h3>
+		<p>Click the button to check where if the string includes the specified value.</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="demo"></p>
+
+		<p><strong>Note:</strong> The includes() method is not supported in IE 11 (and earlier versions).</p>
+
+		<script>
+		function myFunction() {
+		  var str = "Hello world, welcome to the universe.";
+		  var n = str.includes("world");
+		  //var n = str.includes("world", 1);
+		  document.getElementById("demo").innerHTML = n;
+		}
+		</script>
+</body>
+</html>

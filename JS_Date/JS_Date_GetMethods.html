@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Date_GetMethods</title>
+</head>
+<body>
+            <h1>JavaScript Get Date Methods</h1>
+            <h2 style="color: red">Time Methods</h2>
+            <h3>JavaScript getTime()</h3>
+            <p>The internal clock in JavaScript counts from midnight January 1, 1970.</p>
+            <p>The getTime() function returns the number of milliseconds since then:</p>
+            <p id="demo1"></p>
+
+            <h3>JavaScript getHours()</h3>
+            <p>The getHours() method returns the hours of a date as a number (0-23):</p>
+            <p id="demo2"></p>
+
+            <h3>JavaScript getMinutes()</h3>
+            <p>The getMinutes() method returns the minutes of a date as a number (0-59):</p>
+            <p id="demo3"></p>
+
+            <h3>JavaScript getSeconds()</h3>
+            <p>The getSeconds() method returns the seconds of a date as a number (0-59):</p>
+            <p id="demo4"></p>
+
+            <h3>JavaScript getMilliseconds()</h3>
+            <p>The getMilliseconds() method returns the milliseconds of a date as a number (0-999):</p>
+            <p id="demo5"></p>
+
+            <h2 style="color: red">Date Methods</h2>
+
+            <h3>JavaScript getDate()</h3>
+            <p>The getDate() method returns the day of a date as a number (1-31):</p>
+            <p id="demo6"></p>
+
+            <h3>JavaScript getDay()</h3>
+            <p>The getDay() method returns the weekday as a number:</p>
+            <p id="demo7"></p>
+            <p>In JavaScript, the first day of the week (0) means "Sunday", even if some countries in the world consider the first day of the week to be "Monday"</p>
+            <h3>JavaScript getDay() Weekday Name</h3>
+            <p>You can use an array of names, and getDay() to return the weekday as a name:</p>
+            <p id="demo8"></p>
+
+            <h3>JavaScript getMonth()</h3>
+            <p>The getMonth() method returns the month of a date as a number (0-11):</p>
+            <p><strong>Note:</strong> 0=January, 1=February etc.</p>
+            <p id="demo9"></p>
+            <h3>JavaScript getMonth() Name</h3>
+            <p>In JavaScript, the first month (January) is month number 0, so December returns month number 11.</p>
+            <p>You can use an array to display the name of the month:</p>
+            <p id="demo10"></p>
+
+            <h3>JavaScript getFullYear()</h3>
+            <p>The getFullYear() method returns the full year of a date:</p>
+            <p id="demo11"></p>
+    
+
+        <script>
+            var d1 = new Date();
+            document.getElementById("demo1").innerHTML = d1.getTime();
+            var d2 = new Date();
+            document.getElementById("demo2").innerHTML = d2.getHours();
+            var d3 = new Date();
+            document.getElementById("demo3").innerHTML = d3.getMinutes();
+            var d4 = new Date();
+            document.getElementById("demo4").innerHTML = d4.getSeconds();
+            var d5 = new Date();
+            document.getElementById("demo5").innerHTML = d5.getMilliseconds();
+
+
+            var d6 = new Date();
+            document.getElementById("demo6").innerHTML = d6.getDate();
+
+            var d7 = new Date();
+            document.getElementById("demo7").innerHTML = d7.getDay();
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            document.getElementById("demo8").innerHTML = days[d7.getDay()];
+
+            var d9 = new Date();
+            document.getElementById("demo9").innerHTML = d9.getMonth();
+            var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            document.getElementById("demo10").innerHTML = months[d9.getMonth()];
+
+            var d11 = new Date();
+            document.getElementById("demo11").innerHTML = d11.getFullYear();
+
+        </script>
+</body>
+</html>

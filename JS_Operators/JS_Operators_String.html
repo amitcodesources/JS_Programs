@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS String Operators</title>
+	<style>
+		div{
+			background-color: seagreen;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+		<h3>The + operator, and the += operator can also be used to concatenate (add) strings</h3>
+		<div>
+			<h1 id="display"></h1>
+		</div>
+		<br>
+		<button onclick="f1()">Morning</button>
+		<br><br><br>
+		<button onclick="f2()">Evening</button>
+</body>
+		<script>
+		var output;
+		function f1() {
+		    var text1 = "Good";
+		    var text2= "Morning";
+		    output= text1+" "+text2;
+		    console.log(output);
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function f2() {
+		    var text1 = "Good ";
+		    var text2= "Evening";
+		    text1 += text2;
+		    console.log(text1);
+		    document.getElementById('display').innerHTML = text1;
+		}
+		</script>
+</html>

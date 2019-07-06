@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>indexOf() demo</title>
+</head>
+<body>	
+	<h1>Array.indexOf()</h1>
+	<h3 id="arr1"></h3>
+	<p id="demo1"></p>
+	<h1>array.indexOf(item, start)</h1>
+	<h3 id="arr2"></h3>
+	<p id="demo2"></p>
+	<h3>Array.indexOf() returns -1 if the item is not found.</h3>
+	<p id="demo3"></p>
+
+	<script>
+	var fruits = ["Apple", "Orange", "Grapes", "Mango"];
+	document.getElementById("arr1").innerHTML = fruits;
+	var a = fruits.indexOf("Apple");
+	document.getElementById("demo1").innerHTML = "Apple is found in position " +a;
+
+	var cars = ["BMW", "Audi", "Honda", "Audi", "Audi", "MarutiSuzuki"];
+	document.getElementById("arr2").innerHTML = cars;
+	var b = cars.indexOf("Audi", 2);
+	document.getElementById("demo2").innerHTML = "Audi is found in position " +b;
+
+	var c = fruits.indexOf("Banana");
+	document.getElementById("demo3").innerHTML = "Banana is found in position " +c;	
+
+	</script>
+
+	<p>The indexOf() does not work in Internet Explorer 8 and earlier versions.</p>
+
+</body>
+</html>

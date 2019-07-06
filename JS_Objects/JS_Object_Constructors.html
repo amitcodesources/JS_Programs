@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Object_Constructors</title>
+</head>
+<body>
+        <div align="center">
+            <h1>JavaScript Object Constructors</h1>
+
+            <h3>Objects of the same type are created by calling the constructor function with the new keyword:</h3>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+
+            <h3>Adding a Property to an Object</h3>
+            <p id="demo3"></p>
+
+            <h3>Adding a Method to an Object</h3>
+            <p id="demo4"></p>
+
+            <h3>The changeName() function assigns the value of name to the person's lastName property.</h3>
+            <p id="demo5"></p>
+
+            <h3>The JavaScript prototype property allows you to add new properties and also methods to object constructors:</h3>
+            <p id="demo6"></p>
+        </div>
+
+        <script>
+
+            // Constructor function for Person objects
+            function Person(first, last, age, eye) {
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+                this.eyeColor = eye;
+                this.name = function() {return this.firstName + " " + this.lastName;};
+                this.changeName = function (name) {
+                    this.lastName = name;
+                }
+            }
+
+            // Create a Person object
+            var res1 = new Person("John", "Doe", 50, "blue");
+            var res2 = new Person("Sally", "Rally", 48, "green");
+
+            // Display age
+            document.getElementById("demo1").innerHTML =
+               res1.firstName+ " is " + res1.age + " years old.";
+
+            document.getElementById("demo2").innerHTML =
+                res2.firstName+ " is " + res2.age + " years old.";
+
+            // Add nationality to first object
+            res1.nationality = "English";
+
+            // Diplay nationality
+            document.getElementById("demo3").innerHTML =
+                res1.firstName+ " is " + res1.nationality;
+
+            // Add a fullname method to first object
+            res1.fullName = function() {
+                return this.firstName + " " + this.lastName;
+            };
+
+            // Display full name
+            document.getElementById("demo4").innerHTML =
+                "1st Person FullName Is " + res1.fullName();
+
+            // Change last name
+            res1.changeName("Amit");
+
+            // Diplay last name
+            document.getElementById("demo5").innerHTML =
+                "1st Person LastName Is " + res1.lastName;
+
+
+            Person.prototype.city = "NewYork";
+
+            document.getElementById("demo6").innerHTML =
+                res1.firstName+ " is from " + res1.city;
+
+        </script>
+
+</body>
+</html>

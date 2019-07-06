@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Pop</title>
+</head>
+<body>
+	<p id="arr"></p>
+	<h3>The pop() method removes the last element from an array.</h3>
+    <p id="resArr"></p>
+    <p>The return value of the pop() method is the removed item.</p>
+    <p id="removedItem"></p>
+    <button onclick="f()">Pop Item Value</button>
+
+    <script type="text/javascript">
+    	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    	document.getElementById("arr").innerHTML = fruits;
+    	
+    	function f() {        
+        document.getElementById("removedItem").innerHTML = "Pop Item: "+ fruits.pop();
+        document.getElementById("resArr").innerHTML = fruits;
+    	}
+    </script>
+</body>
+</html>

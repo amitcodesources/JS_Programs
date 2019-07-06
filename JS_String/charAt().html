@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>charAt()</title>
+</head>
+<body>
+		<h1>The charAt() method returns the character at a specified index (position) in a string</h1>
+
+		<p id="txt">HELLO WORLD</p>
+	    <p id="demo"></p>
+	    <button onclick="f()">Char At 6 Index</button>
+
+	    <script type="text/javascript">
+	    	function f() {
+		        var str = document.getElementById("txt").innerHTML;
+		        document.getElementById("demo").innerHTML = str.charAt(6);
+		    }
+	    </script>
+</body>
+</html>

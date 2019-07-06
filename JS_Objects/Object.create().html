@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Object Create</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let obj = {};
+		obj.name = "messi";
+		obj.year= 2018;
+		obj.speak = function(){
+		 return "My Name is "+this.name+" and this is year "+this.year;
+		}
+		
+
+		let newObj = Object.create(obj);
+		newObj.name = "Amit";
+		newObj.year = 2019;
+		newObj.speak = function(){
+		 return "My Name is "+this.name+" and this is year "+this.year;
+		}
+
+		document.write("<h1>The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.</h1>");
+		document.write(obj.speak());
+		document.write("<br>");
+		document.write(newObj.speak());
+	</script>
+
+</body>
+</html>

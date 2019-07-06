@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS BOM Popup Alert</title>
+</head>
+<body>
+		<h1>JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.</h1>
+
+		<button onclick="fAlert()">Alert Box</button>
+		<button onclick="fConfirm()">Confirm Box</button>
+		<button onclick="fPrompt()">Prompt Box</button>
+		<button onclick="alert('Hello\nHow are you?')">Line Breaks</button>
+		<h3 id="demo"></h3>
+
+		<script type="text/javascript">
+			function fAlert(){
+				alert('Welcome To BOM');
+			}
+
+			function fConfirm(){
+				var txt;
+				if(confirm("Are U Sure...!")){
+					txt = "You Click Ok...";
+				}
+				else{
+					txt = "You Click Cancel..."
+				}
+				document.getElementById('demo').innerHTML = txt;
+			}
+
+			function fPrompt(){
+				  var txt;
+				  var person = prompt("Please enter your name:", "Harry Potter");
+				  if (person == null || person == "") {
+				    txt = "User cancelled the prompt.";
+				  } else {
+				    txt = "Hello " + person + "! How are you today?";
+				  }
+				  document.getElementById("demo").innerHTML = txt;
+			}
+
+		</script>
+</body>
+</html>

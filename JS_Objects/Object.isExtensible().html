@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object.isExtensible()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const object1 = {};
+
+		console.log(Object.isExtensible(object1));
+		// expected output: true
+
+		Object.preventExtensions(object1);
+
+		console.log(Object.isExtensible(object1));
+		// expected output: false
+		
+	</script>
+</body>
+</html>

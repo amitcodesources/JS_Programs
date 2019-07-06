@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>attribute selector</title>
+	<!-- <style type="text/css">
+		a[href="https://in.yahoo.com/"]{
+			background-color: pink;
+		}
+	</style> -->
+</head>
+<body>
+	<div>
+		<a href="https://www.google.co.in/" target="_blank">Google</a>
+		<a href="https://in.yahoo.com/" target="_blank">Yahoo</a>
+		<a href="https://www.bing.com/" target="_blank">Bing</a>
+	</div>
+	<script type="text/javascript">
+		document.querySelector('a[href="https://in.yahoo.com/"]').style.background = "pink";
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prototype</title>
+</head>
+<body>
+	<h1>The prototype constructor allows you to add new properties and methods to the Array() object.</h1>
+	<p>Click the button to create an array, call the new ucase() method, and display the result.</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<script>
+	Array.prototype.myUcase = function() {
+	  var i;
+	  for (i = 0; i < this.length; i++) {
+	    this[i] = this[i].toUpperCase();
+	  }
+	};
+
+	function myFunction() {
+	  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	  fruits.myUcase();
+	  document.getElementById("demo").innerHTML = fruits;
+	}
+	</script>
+</body>
+</html>

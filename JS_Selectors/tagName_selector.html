@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tag Selector</title>
+	<style type="text/css">
+		p{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+		<div>
+		<span>Sachin</span>
+		<p>BMW</p>
+		<p>Audi</p>
+		<span>Kohli</span>
+	</div>
+	<script type="text/javascript">
+		document.getElementsByTagName('p')[0].style.color = 'red';
+		//document.querySelector('p').style.color = "red"
+	</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Date_Formats</title>
+</head>
+<body>
+<div align="center">
+    <h1>JavaScript Date Formats</h1>
+
+    <h3>JavaScript ISO Dates</h3>
+    <p id="demo1"></p>
+
+    <h3>JavaScript Short Dates</h3>
+    <p id="demo2"></p>
+
+    <h3>JavaScript Long Dates</h3>
+    <p id="demo3"></p>
+
+
+    <h1>Date Input - Parsing Dates</h1>
+
+    <h3>Date.parse() returns the number of milliseconds between the date and January 1, 1970:</h3>
+    <p id="demo4"></p>
+
+    <h3>Date.parse(string) returns milliseconds.</h3>
+    <p>You can use the return value to convert the string to a date object:</p>
+    <p id="demo5"></p>
+
+
+</div>
+
+</body>
+<script>
+
+    var d = new Date("2015-03-25");
+    //var d = new Date("2015-03");
+    //var d = new Date("2015");
+    document.getElementById("demo1").innerHTML = d;
+
+    var d1 = new Date("03/25/2015");
+    document.getElementById("demo2").innerHTML = d1;
+
+    var d2 = new Date("Mar 25 2015");
+    //var d2 = new Date("25 Mar 2015");
+    //var d2 = new Date("January 25 2015");
+    //var d2 = new Date("Jan 25 2015");
+    //var d2 = new Date("JANUARY, 25, 2015");
+    document.getElementById("demo3").innerHTML = d2;
+
+    var msec = Date.parse("March 21, 2012");
+    document.getElementById("demo4").innerHTML = msec;
+
+    var d3 = new Date(msec);
+    document.getElementById("demo5").innerHTML = d3;
+
+</script>
+</html>

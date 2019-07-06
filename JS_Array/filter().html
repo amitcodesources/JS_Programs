@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array filter()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<h3>.filter() creates a new array based on whether the items of an array pass a certain condition.</h3>");
+		const studentsAge = [17, 16, 18, 19, 21, 17];
+		const ableToDrink = studentsAge.filter( age => age > 18 );
+		// ableToDrink will be equal to [19, 21]
+		document.write(ableToDrink);
+	</script>
+</body>
+</html>

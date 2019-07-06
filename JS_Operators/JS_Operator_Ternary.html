@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Ternary Operators</title>
+	<style>
+		div{
+			background-color: seagreen;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body onload="f1()">
+	<h2>The conditional operator assigns a value to a variable based on a condition</h2>
+	<h3><pre>variablename = (condition) ? value1:value2</pre></h3>
+		<div>
+			<h1 id="display"></h1>
+		</div>
+		
+</body>
+		<script>
+		function f1() {
+			var age, votable;
+		    age = prompt("Enter Your Age");
+		    votable = (age < 18) ? "You Are Too Young":"You Are Old Enough";
+		    document.getElementById('display').innerHTML = votable;
+		}
+		</script>
+</html>

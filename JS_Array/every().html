@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array every()</title>
+</head>
+<body>
+	<h3>every() similar to .some(), but checks if all items in an array pass a condition.</h3>
+	<script type="text/javascript">
+		const ratings = [3, 5, 4, 3, 5];
+		const goodOverallRating = ratings.every( rating => rating >= 3);
+
+		// const goodOverallRating = ratings.every( rating => rating >= 4);
+
+		// const goodOverallRating = ratings.every(function(v, i){
+		// 	return v>=4;
+		// })
+		
+		document.write(goodOverallRating);
+	</script>
+</body>
+</html>

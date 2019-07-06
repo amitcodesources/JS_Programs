@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String()</title>
+</head>
+<body>
+	<h1>The String() function converts the value of an object to a string.</h1>
+	<h3>The String() function returns the same value as toString() of the individual objects.</h3>
+	<p>Click the button to convert different objects to strings.</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<script>
+	function myFunction() {
+	  var x1 = Boolean(0);
+	  var x2 = Boolean(1);
+	  var x3 = new Date();
+	  var x4 = "12345";
+	  var x5 = 12345;
+
+	  var res =
+	  String(x1) + "<br>" +
+	  String(x2) + "<br>" +
+	  String(x3) + "<br>" +
+	  String(x4) + "<br>" +
+	  String(x5);
+	  document.getElementById("demo").innerHTML = res;
+	}
+	</script>
+</body>
+</html>

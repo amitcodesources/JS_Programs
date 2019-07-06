@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object.getOwnPropertyDescriptor()</title>
+</head>
+<body>
+		<script type="text/javascript">
+			const object1 = {
+			  property1: 42
+			}
+
+			const descriptor1 = Object.getOwnPropertyDescriptor(object1, 'property1');
+
+
+			document.write("<h3>The Object.getOwnPropertyDescriptor() method returns a property descriptor for an own property (that is, one directly present on an object and not in the object's prototype chain) of a given object.</h3>");
+
+			document.write(descriptor1.configurable);
+			// expected output: true
+			document.write("<br>");
+			document.write(descriptor1.value);
+			// expected output: 42											
+		</script>
+</body>
+</html>

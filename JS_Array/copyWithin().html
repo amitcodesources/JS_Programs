@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>copyWithin()</title>
+</head>
+<body>
+		<h1>The copyWithin() method copies array elements within the array, to and from specified positions.
+		</h1>
+		<h3>
+			[target] - 	Required. The index position to copy the elements to <br>
+			[start] -	Optional. The index position to start copying elements from  (default is 0) <br>
+			[end] -	Optional. The index position to stop copying elements from (default is array.length)
+		</h3>
+		<p>Click the button to copy the first two array elements to the last two array elements.</p>
+
+		<button onclick="f1()">Try it</button>
+		<p>fruits1.copyWithin(2,0)</p>
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+
+		<br><br>
+
+		<button onclick="f2()">Try it</button>
+		<p>fruits2.copyWithin(2,0,2)</p>
+		<p id="demo3"></p>
+		<p id="demo4"></p>	
+
+		<p><strong>Note:</strong> The copyWithin() method is not supported in IE 11 (and earlier versions).</p>
+
+		<script>
+		var fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+		document.getElementById("demo1").innerHTML = fruits1;
+
+		function f1() {  
+		  document.getElementById("demo2").innerHTML = fruits1.copyWithin(2,0);
+		}
+
+		var fruits2 = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
+		document.getElementById("demo3").innerHTML = fruits2;
+
+		function f2() {  
+		  document.getElementById("demo4").innerHTML = fruits2.copyWithin(2,0,2);
+		}
+		</script>
+</body>
+</html>

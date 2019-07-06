@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>toLocaleUpperCase()</title>
+</head>
+<body>
+	<h3>
+		The toLocaleUpperCase() method returns the value of the string converted to upper case according to any locale-specific case mappings. toLocaleUpperCase() does not affect the value of the string itself. In most cases, this will produce the same result as toUpperCase(), but for some locales, such as Turkish, whose case mappings do not follow the default case mappings in Unicode, there may be a different result.
+	</h3>
+	<p>Click the button to convert the string to uppercase letters.</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<script>
+	function myFunction() {
+	  var str = "Hello World!";
+	  var res = str.toLocaleUpperCase();
+	  document.getElementById("demo").innerHTML = res;
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS BOM Window</title>
+</head>
+<body>
+	<h4>window.innerHeight - the inner height of the browser window (in pixels)</h4>
+	<h4>window.innerWidth - the inner width of the browser window (in pixels)</h4>
+	<h4>The open() method opens a new browser window.</h4>
+	<h4>The close() method closes the current window.</h4>
+	<h4>The moveTo() method moves a window's left and top edge to the specified coordinates.</h4>
+	<h4>moveBy() - Moves a window relative to its current position</h4>
+	<h4>resizeTo() - Resizes the window to the specified width and height</h4>
+	<h4>resizeBy() - Resizes the window by the specified pixels</h4>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<button onclick="fOpen()">Window Open</button>
+	<button onclick="fClose()">Window Close</button>
+	<button onclick="fMove()">Window MoveTo</button>
+	<button onclick="fMoveBy()">Window MoveBy</button>
+	<button onclick="fResize()">Window ResizeTo</button>
+	<button onclick="fResizeBy()">Window ResizeBy</button>
+
+	
+	<script type="text/javascript">
+		
+		// var dWidth = document.body.clientWidth;
+		// var dWidth = document.documentElement.clientWidth;
+		var dWidth = window.innerWidth;
+		document.getElementById('demo1').innerHTML = "Document Width: <b>"+dWidth+"</b>";
+
+		// var dHeight = document.body.clientHeight;
+		// var dHeight = document.documentElement.clientHeight;
+		var dHeight = window.innerHeight;
+		document.getElementById('demo2').innerHTML = "Document Height: <b>"+dHeight+"</b>";
+
+		function fOpen(){
+			//window.open("https://www.w3schools.com");
+
+			// window.open("https://www.w3schools.com", "_self");
+			
+			//window.open("https://www.w3schools.com", "", "width=200,height=100");
+
+			// window.open("https://www.w3schools.com", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+
+			myWindow = window.open("", "myWindow", "width=200, height=200");
+			myWindow.document.write("<p>This is 'myWindow'</p>");
+
+			// var myWindow = window.open("", "myWindow", "width=200,height=100");   // Opens a new window
+			// myWindow.document.write("<p>This is 'myWindow'</p>");   // Text in the new window
+			// myWindow.opener.document.write("<p>This is the source window!</p>");  // Text in the window that created the new window
+
+		}
+
+		function fClose(){
+			myWindow.close();
+		}
+
+		function fMove(){
+			myWindow.moveTo(500, 100);
+			myWindow.focus();
+		}
+
+		function fMoveBy(){
+			myWindow.moveBy(250, 250);                                
+  			myWindow.focus();
+		}
+
+		function fResize(){
+			myWindow.resizeTo(300, 300);
+			myWindow.focus();
+		}
+
+		function fResizeBy(){
+			myWindow.resizeBy(400, 200);
+			myWindow.focus();
+		}
+
+	</script>
+</body>
+</html>

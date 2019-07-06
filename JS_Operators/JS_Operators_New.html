@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS New Operator</title>
+	<script type="text/javascript">
+		function show(){
+			var pic = new Image();
+			pic.src = "Images/water.jpg";
+			pic.width = "250";
+			pic.height = "250";
+			pic.border = "1";  
+			var container = document.getElementById("divcontainer");
+			container.appendChild(pic);
+		}
+	</script>
+</head>
+<body>
+	<h3>The new operator is used to create an instance of a user-defined object type or one of builtin object types which have a constructor function</h3>
+	<div>
+		<form>
+			<input type="button" value="Show Image" onclick="show()"/>
+			<br><br>
+			<div id="divcontainer"></div>
+		</form>
+	</div>
+</body>
+</html>

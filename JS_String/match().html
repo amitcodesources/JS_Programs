@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>match()</title>
+</head>
+<body>
+		<h1>The match() method searches a string for a match against a regular expression, and returns the matches, as an Array object.</h1>
+
+		<p>Click the button to perfom a global search for the letters "ain" in a string, and display the matches.</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="demo"></p>
+
+		<script>
+		function myFunction() {
+		  var str = "The rain in SPAIN stays mainly in the plain"; 
+		  var res = str.match(/ain/g);
+		  document.getElementById("demo").innerHTML = res;
+		}
+		</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>charCodeAt()</title>
+</head>
+<body>
+		<h1>The charCodeAt() method returns the unicode of the character at a specified index in a string</h1>
+		<p id="txt">HELLO WORLD</p>
+	    <p id="demo"></p>
+	    <button onclick="f()">CharCode At 0 Index</button>
+
+	    <script type="text/javascript">
+	    	function f() {
+		        var str = document.getElementById("txt").innerHTML;
+		        document.getElementById("demo").innerHTML = str.charCodeAt(0);
+		    }
+	    </script>
+</body>
+</html>

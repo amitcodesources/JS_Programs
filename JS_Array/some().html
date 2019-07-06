@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array some()</title>
+</head>
+<body>
+	<h1>.some() checks if any item in an array passes the condition. A good use case would be checking for user privileges. It can also be used similarly to a .forEach() where you would perform an action on each array item and break out of the loop once a truthy value is returned.</h1>
+	<input type="number" id="myAge" onmouseup="f()" value="18">
+	<h3 id="res"></h3>
+	<script type="text/javascript">
+		function f(){
+			var ages = [10, 15, 18, 20, 22];
+			var cAge = document.getElementById('myAge').value;
+			
+			var containsAge = ages.some( (age) => age >= cAge);
+			document.getElementById('res').innerHTML = containsAge;
+
+			
+			// function chkAge(age){
+			// 	return age >= cAge;
+			// }
+			// document.getElementById('res').innerHTML = ages.some(chkAge);
+		}
+	</script>
+</body>
+</html>

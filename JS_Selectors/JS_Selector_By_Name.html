@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Selector By Name</title>
+	<style type="text/css">
+		form{
+			border-style: double;
+			margin: 100;
+		}
+	</style>
+	<script type="text/javascript">
+		function bodyload(){
+			pic.src = "water.jpg";
+			frmRegister.btnRegister.value = "Register";
+			frmLogin.btnLogin.value = "Login";
+		}
+	</script>
+</head>
+<body onload="bodyload()">
+	<div>
+		<img name="pic" width="200" height="200" border="1">
+	</div>
+	<div>
+		<form name="frmRegister">
+			<h2>Register Form</h2>
+			Your Name: <input type="text"><br>
+			<input type="button" name="btnRegister">
+		</form><br>
+		<form name="frmLogin">
+			<h2>Login</h2>
+			<input type="button" name="btnLogin"><br>
+			<input type="text">
+		</form>
+	</div>
+</body>
+</html>

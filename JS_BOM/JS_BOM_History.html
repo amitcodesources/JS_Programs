@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS BOM History</title>
+</head>
+<body>
+		<h1>The window.history object contains the browsers history.</h1>
+		<h3>history.back() - same as clicking back in the browser</h3>
+		<h3>history.forward() - same as clicking forward in the browser</h3>
+		<button onclick="fOpen()">Open</button>
+		<button onclick="fBack()">Back</button>
+		<button onclick="fForward()">Forward</button>
+
+		<script type="text/javascript">
+
+			function fOpen(){
+				window.open("https://www.w3schools.com/");
+			}
+
+			function fBack(){
+				window.history.back();
+			}
+
+			function fForward(){
+				window.history.forward();
+			}
+		</script>
+</body>	
+</html>

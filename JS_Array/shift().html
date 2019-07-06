@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array shift()</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<h3>The shift() method removes the first element of an array (and "shifts" all other elements to the left):</h3>
+    <h3>The shift() method returns the element that was shifted out.</h3>
+    <p id="removedItem"></p>
+    <p id="res"></p>
+    <button onclick="f()">Shift Item Value</button>
+
+    <script type="text/javascript">
+    	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    	document.getElementById("demo").innerHTML = fruits;
+    	function f() {
+        document.getElementById("removedItem").innerHTML ="Removed Item:"+ fruits.shift();
+        document.getElementById("res").innerHTML = fruits;
+    	}
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>decodeURIComponent()</title>
+</head>
+<body>
+	<h1>The decodeURIComponent() function decodes a URI component.</h1>
+	<p>Click the button to decode a URI after encoding it.</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<script>
+	function myFunction() {
+	  var uri = "https://w3schools.com/my test.asp?name=ståle&car=saab";
+	  var uri_enc = encodeURIComponent(uri);
+	  var uri_dec = decodeURIComponent(uri_enc);
+	  var res = "Encoded URI: " + uri_enc + "<br>" + "Decoded URI: " + uri_dec;
+	  document.getElementById("demo").innerHTML = res;
+	}
+	</script>
+</body>
+</html>

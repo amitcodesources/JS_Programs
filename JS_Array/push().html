@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Push</title>
+</head>
+<body>
+	<h3>The push() method appends a new element to an array.</h3>
+    <p id="demo"></p>
+    <h3>The push() method returns the new array length.</h3>
+    <p id="res"></p>
+    <button onclick="f()">Push Item</button>
+
+    <h3>The length property provides an easy way to append new elements to an array without using the push() method.</h3>
+    <p id="demolen"></p>
+    <button onclick="fn()">Add Item</button>
+
+    <script type="text/javascript">
+    	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    	document.getElementById("demo").innerHTML = fruits;
+	    function f() {
+	        document.getElementById("res").innerHTML ="New Array Length Is:"+ fruits.push("Kiwi");
+	        document.getElementById("demo").innerHTML = fruits;
+	    }
+
+        document.getElementById("demolen").innerHTML = fruits;
+        function fn() {
+            fruits[fruits.length] = "Lemon";
+            document.getElementById("demolen").innerHTML = fruits;
+        }
+        
+    </script>
+</body>
+</html>

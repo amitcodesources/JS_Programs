@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Selector By BOM Heirarchy</title>
+	<style type="text/css">
+		form{
+			border-style: double;
+			margin: 100;
+		}
+	</style>
+	<script type="text/javascript">
+		function bodyload(){
+			window.document.images[0].src = "Images/water.jpg";
+			window.document.forms[0].elements[1].value = "Register";
+			window.document.forms[1].elements[0].value = "Login";
+		}
+	</script>
+</head>
+<body onload="bodyload()">
+	<div>
+		<img width="200" height="200" border="1">
+	</div>
+	<div>
+		<form>
+			<h2>Register Form</h2>
+			Your Name: <input type="text"><br>
+			<input type="button">
+		</form><br>
+		<form>
+			<h2>Login</h2>
+			<input type="button"><br>
+			<input type="text">
+		</form>
+	</div>
+</body>
+</html>

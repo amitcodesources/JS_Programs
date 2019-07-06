@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Define Property</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		const object1 = {};
+		Object.defineProperty(object1, 'name', {
+			value:'Amit',
+			writable:false
+		});
+		
+		object1.name = "Sachin";
+		// throws an error in strict mode
+
+		document.write("<h3>The static method Object.defineProperty() defines a new property directly on an object, or modifies an existing property on an object, and returns the object.</h3>");
+		document.write(object1.name);
+	</script>
+</body>
+</html>

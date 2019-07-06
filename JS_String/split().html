@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Strings_Methods_Array_Split</title>
+</head>
+<body>
+            <h2>The split() method is used to split a string into an array of substrings, and returns the new array.</h2>
+            <h2></h2>
+            <p>Click "Try it" to display the first array element, after a string split.</p>
+            <button onclick="f1()">Try it</button>
+            <p id="demo1"></p>
+
+            <br>
+
+            <p>Click "Try it" to display the all array elements split and vertically arrange.</p>
+            <button onclick="f2()">Try it</button>
+            <p id="demo2"></p>
+
+            <script>
+                function f1() {
+                    var str = "a,b,c,d,e,f";
+                    var arr = str.split(",");
+                    document.getElementById("demo1").innerHTML = arr.join("<br>");
+                }
+
+                function f2() {
+                    var str = "Hello";
+                    var arr = str.split("");
+                    var text = "";
+                    var i;
+                    for (i = 0; i < arr.length; i++) {
+                        text += arr[i] + "<br>"
+                    }
+                    document.getElementById("demo2").innerHTML = text;
+                }
+            </script>
+</body>
+</html>

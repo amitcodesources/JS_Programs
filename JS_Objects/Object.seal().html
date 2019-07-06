@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Seal</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<h3>Object.seal() Stops any new properties from being added to an object, but still allows for existing properties to be changed</h3>");
+		const sealedObject = {
+		  name: 'Robert'
+		}
+
+		Object.seal(sealedObject);
+
+		sealedObject.name = 'Bob';
+		sealedObject.wearsWatch = true;
+
+		document.write(sealedObject.name+"<br>"+sealedObject.wearsWatch);
+	</script>
+</body>
+</html>

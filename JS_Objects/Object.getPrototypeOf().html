@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object.getPrototypeOf()</title>
+</head>
+<body>	
+		<script type="text/javascript">
+			const prototype1 = {};
+			const object1 = Object.create(prototype1);
+
+
+			document.write("<h3>The Object.getPrototypeOf() method returns the prototype (i.e. the value of the internal [[Prototype]] property) of the specified object.</h3>");
+			document.write(Object.getPrototypeOf(object1) === prototype1);
+			// expected output: true											
+		</script>
+</body>
+</html>

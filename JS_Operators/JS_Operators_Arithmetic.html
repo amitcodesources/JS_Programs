@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Arithmatic Operators</title>
+	<style>
+		#dis{
+			background-color: seagreen;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+		<h3>Arithmetic operators are used to perform arithmetic between variables and/or values</h3>
+		<div id="dis">
+			<h1 id="display"></h1>
+		</div>
+		<br><br><br>
+		<div align="center">
+			<button onclick="fAdd()">Add Of 5, 2</button><br><br>
+			<button onclick="fSubstract()">Subtract Of 5, 2</button><br><br>
+			<button onclick="fMultiply()">Multiply Of 5, 2</button><br><br>
+			<button onclick="fDivision()">Division Of 10, 5</button><br><br>
+			<button onclick="fModulus()">Modulus Of 10, 5</button><br><br>
+			<button onclick="fIncrement()">Increament Of 10</button><br><br>
+			<button onclick="fDecrement()">Decreament Of 10</button>
+		</div>
+</body>
+		<script>
+		var output;
+		function fAdd() {
+		    var y = 5;
+		    var x = y + 2;
+		    output= "Value of X is: "+ x;
+		    console.log(output);
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function fSubstract() {
+		    var y = 5;
+		    var x = y - 2;
+		    output= "Value of X is: "+ x;
+		    console.log(output);
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function fMultiply() {
+		    var y = 5;
+		    var x = y * 2;
+		    output= "Value of X is: "+ x;
+		    console.log(output);
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function fDivision() {
+		    var y = 10;
+		    var x = y / 5;
+		    output= "Value of X is: "+ x;
+		    console.log(output);
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function fModulus() {
+		    var y = 10;
+		    var x = y % 5;
+		    output= "Value of X is: "+ x;
+		    console.log(output);
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function fIncrement() {
+		    var y = 10;
+		    var x = ++y;
+		    output= "Value of X is: "+ x;
+		    console.log(output);
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function fDecrement() {
+		    var y = 10;
+		    var x = --y;
+		    output= "Value of X is: "+ x;
+		    console.log(output);
+		    document.getElementById('display').innerHTML = output;
+		}
+		</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>encodeURI()</title>
+</head>
+<body>
+	<h1>The encodeURI() function is used to encode a URI.</h1>
+	<h3>This function encodes special characters, except: , / ? : @ & = + $ # (Use encodeURIComponent() to encode these characters).</h3>
+	<p id="demo"></p> <br>
+	<p>Click the button to encode a URI.</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="res"></p>
+
+	<script>
+	var uri = "my test.asp?name=ståle&car=saab";
+	document.getElementById("demo").innerHTML = uri;
+	function myFunction() {
+	  
+	  var res = encodeURI(uri);
+	  document.getElementById("res").innerHTML = res;
+	}
+	</script>
+
+</body>
+</html>

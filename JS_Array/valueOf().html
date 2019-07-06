@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>valueOf()</title>
+</head>
+<body>
+		<h3>
+			The valueOf() method returns the array. <br>
+			This method is the default method of the array object. Array.valueOf() will return the same as Array <br>
+			Note: This method will not change the original array.
+		</h3>
+
+		<p>Click the button to return an array.</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="demo"></p>
+
+		<script>
+		function myFunction() {
+		  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		  document.getElementById("demo").innerHTML = fruits.valueOf();
+		}
+		</script>
+</body>
+</html>

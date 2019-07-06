@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array map()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<h3>.map() creates a new array by manipulating the values in another array. Great for data manipulation and it is often used in React because it is an immutable method.</h3>");
+
+		const numbers = [2, 3, 4, 5];
+		const dollars = numbers.map( number => '$' + number);
+		// dollars will be equal to ['$2', '$3', '$4', '$5']
+
+		const double = numbers.map( number => 2 * number);
+		// double will be equal to [4, 6, 8, 10]
+
+		document.write(dollars);
+		document.write("<br><br>");
+		document.write(double);
+
+	</script>
+
+	<script type="text/javascript">
+		var p = ['Sachin', 'Kohli', 'Dhoni', 'Rohit'];
+		p.forEach( v => document.write("<ul><li>"+v+"</li></ul>"));
+
+		// p.forEach(function(v){
+		// 	document.write(v+"<br>")			
+		// } );
+	</script>
+</body>
+</html>

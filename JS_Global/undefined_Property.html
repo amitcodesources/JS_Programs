@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>undefined_Property</title>
+</head>
+<body>
+	<h1>The undefined property indicates that a variable has not been assigned a value, or not declared at all.</h1>
+	<p>Click the button to test if a variable is undefined.</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo1"></p> <br>
+	<p id="demo2"></p>
+	<script>
+	function myFunction() {
+	  var x;
+
+	  if (typeof x === "undefined") {
+	    txt1 = "x is undefined";
+	  } else {
+	    txt1 = "x is defined";
+	  }
+	  document.getElementById("demo1").innerHTML = txt1;
+
+	  var y=1;
+
+	  if (typeof y === "undefined") {
+	    txt2 = "y is undefined";
+	  } else {
+	    txt2 = "y is defined";
+	  }
+	  document.getElementById("demo2").innerHTML = txt2;
+	}
+	</script>
+</body>
+</html>

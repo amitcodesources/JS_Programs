@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS BOM Navigation</title>
+</head>
+<body>	
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+		<p id="demo3"></p>
+		<p id="demo4"></p>
+		<p id="demo5"></p>
+		<p id="demo6"></p>
+		<p id="demo7"></p>
+		<p id="demo8"></p>
+		<p id="demo9"></p>
+		<p id="demo10"></p>
+		<script type="text/javascript">
+			document.getElementById("demo1").innerHTML =
+				"navigator.cookiesEnabled is <b>" + navigator.cookieEnabled;
+			document.getElementById("demo2").innerHTML =
+					"navigator.appName is <b>" + navigator.appName+"</b>";
+			document.getElementById("demo3").innerHTML =
+					"navigator.appCodeName is <b>" + navigator.appCodeName+"</b>";
+			document.getElementById("demo4").innerHTML =
+					"navigator.product is <b>" + navigator.product+"</b>";
+			document.getElementById("demo5").innerHTML = 
+					"navigator.version is <b>" + navigator.appVersion+"</b>";
+			document.getElementById("demo6").innerHTML = 
+					"navigator.userAgent is <b>" + navigator.userAgent+"</b>";
+			document.getElementById("demo7").innerHTML = 
+					"navigator.platform is <b>" + navigator.platform+"</b>";
+			document.getElementById("demo8").innerHTML = 
+					"navigator.language is <b>" + navigator.language+"</b>";
+			document.getElementById("demo9").innerHTML = 
+					"navigator.onLine is <b>" + navigator.onLine+"</b>";
+			document.getElementById("demo10").innerHTML = 
+					"navigator.javaEnabled is <b>" + navigator.javaEnabled()+"</b>";
+		</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>decodeURI()</title>
+</head>
+<body>
+	<h1>The decodeURI() function is used to decode a URI.</h1>
+	<p>Click the button to decode a URI after encoding it.</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<script>
+	function myFunction() {
+	  var uri = "my test.asp?name=ståle&car=saab";
+	  var enc = encodeURI(uri);
+	  var dec = decodeURI(enc);
+	  var res = "Encoded URI: " + enc + "<br>" + "Decoded URI: " + dec;
+	  document.getElementById("demo").innerHTML = res;
+	}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Typeof Operators</title>
+	<style>
+		div{
+			background-color: seagreen;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body onload="f1()">
+		<h3>The typeof operator returns the type of a variable, object, function or expression</h3>
+		<div>
+			<h1 id="display"></h1>
+		</div>		
+</body>
+		<script>
+		function f1() {
+			document.getElementById("display").innerHTML = 
+			    "Typeof John Is: "+ typeof "John" + "<br>" +
+			    "Typeof 3.14 Is: "+typeof 3.14 + "<br>" +
+			    "Typeof NaN Is: "+typeof NaN + "<br>" +
+			    "Typeof false Is: "+typeof false + "<br>" +
+			    "Typeof [1, 2, 3, 4] Is: "+typeof [1, 2, 3, 4] + "<br>" +
+			    "Typeof {name:'John', age:34} Is: "+typeof {name:'John', age:34} + "<br>" +
+			    "Typeof new Date() Is: "+typeof new Date() + "<br>" +
+			    "Typeof function () {} Is: "+typeof function () {} + "<br>" +
+			    "Typeof myCar Is: "+typeof myCar + "<br>" +
+			    "Typeof null Is: "+typeof null;
+		}
+		</script>
+</html>

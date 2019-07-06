@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS BOM Location</title>
+</head>
+<body>	
+		<h3>The window.location object can be used to get the current page address (URL) and to redirect the browser to a new page.</h3>
+		<h3>window.location.href returns the href (URL) of the current page</h3>
+		<h3>window.location.hostname returns the domain name of the web host</h3>
+		<h3>window.location.pathname returns the path and filename of the current page</h3>
+		<h3>window.location.protocol returns the web protocol used (http: or https:)</h3>
+		<h3>window.location.assign loads a new document</h3>
+
+		<h4 id="p1"></h4>
+		<h4 id="p2"></h4>
+		<h4 id="p3"></h4>
+		<h4 id="p4"></h4>
+		<h4 id="p5"></h4>
+		<h4 id="p6"></h4>
+		<button onclick="fAssign()">Load New Window</button>
+
+		<script type="text/javascript">
+			document.getElementById("p1").innerHTML =
+					"Page location is:   " + window.location.href;
+
+			document.getElementById("p2").innerHTML =
+					"Page hostname is:   " + window.location.hostname;
+
+			document.getElementById("p3").innerHTML =
+					"Page path is:   " + window.location.pathname;
+
+			document.getElementById("p4").innerHTML =
+					"Page protocol is:  " + window.location.protocol;
+
+			document.getElementById("p5").innerHTML =
+					"Port number is:  " + window.location.port;
+
+			function fAssign(){
+				window.location.assign("https://www.w3schools.com");
+			}
+		</script>
+</body>
+</html>

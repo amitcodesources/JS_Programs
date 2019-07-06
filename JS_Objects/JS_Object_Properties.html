@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Object_Properties</title>
+</head>
+<body>
+        <div align="center">
+            <h2>JavaScript Object Properties</h2>
+
+            <h3>The JavaScript for...in statement loops through the properties of an object.</h3>
+            <p id="demo1"></p>
+
+            <h3>You can add new properties to existing objects.</h3>
+            <p id="demo2"></p>
+
+            <h3>You can delete object properties.</h3>
+            <p id="demo3"></p>
+
+        </div>
+
+        <script>
+            var txt = "";
+            var person = {
+                firstName : "John",
+                lastName  : "Doe",
+                age       : 50,
+                eyeColor  : "Blue"
+            };
+            var x;
+            for (x in person) {
+                txt += person[x] + " ";
+            }
+            document.getElementById("demo1").innerHTML = txt;
+
+
+            person.nationality = "English";
+            document.getElementById("demo2").innerHTML =
+                person.firstName + " is " + person.nationality + ".";
+
+
+            delete person.age;
+            document.getElementById("demo3").innerHTML =
+                person.firstName + " is " + person.age + " years old.";
+
+</script>
+</body>
+</html>

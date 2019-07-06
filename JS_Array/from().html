@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>from()</title>
+</head>
+<body>
+	<h3>Array.from() is a static method that creates an array based on another array or string.</h3> 
+	<h3>You can also pass a map callback function as an argument to further shape the data in the new array. Honestly, I’m not too sure why someone would use this over the .map() method.</h3>
+
+	<script type="text/javascript">
+		const newArray = Array.from('hello');
+		// newArray will be equal to ['h', 'e', 'l', 'l', 'o']
+		document.write(newArray+"<br>");
+
+		const doubledValues = Array.from([2, 4, 6], number => number * 2);
+		// doubleValues will be equal to [4, 8, 12]
+		document.write(doubledValues);
+	</script>
+</body>
+</html>

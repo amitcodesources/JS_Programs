@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS In Operator</title>
+</head>
+<body>
+	<h3>The in operator returns true if the specified property is in the specified object, otherwise false</h3>
+		<script type="text/javascript">
+				var product = {Id:1, Name:"TV", price:2400};
+				var cities = ["Delhi", "Hyd"];
+				document.write("Product is having price: "+("price" in product)+"<br>"+
+					"Cities in this array having length of: "+ ("length" in cities));
+				
+				document.write("<br><br><br>");
+
+				// Arrays
+				var cars = ["Saab", "Volvo", "BMW"];
+				// Objects
+				var person = {firstName:"John", lastName:"Doe", age:50};
+
+				document.write(
+				    ("Saab" in cars) + "<br>" + 
+				    (0 in cars) + "<br>" +
+				    (1 in cars) + "<br>" +
+				    (4 in cars) + "<br>" +
+				    ("length" in cars) + "<br>" +
+
+				    ("firstName" in person) + "<br>" +
+				    ("age" in person) + "<br>" +
+
+				    // Predefined objects
+				    ("PI" in Math) + "<br>" +
+				    ("NaN" in Number) + "<br>" +
+				    ("length" in String));
+		</script>
+</body>
+</html>

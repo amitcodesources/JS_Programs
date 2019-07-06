@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array splice()</title>
+</head>
+<body>
+	<h3>The splice() method adds new elements to an array.</h3>
+    <p>The first parameter (2) defines the position where new elements should be added (spliced in). The second parameter (0) defines how many elements should be removed.</p>
+    <p id="arr"></p>
+    <p id="res"></p>
+    <button onclick="f()">Add Items</button>
+    <br>
+    <p id="arr1"></p>
+    <h3>The splice() methods can be used to remove array elements.</h3>
+    <p id="res1"></p>
+    <button onclick="f1()">Remove First Items</button>
+    <br>
+    <p id="arr2"></p>
+    <h3>The splice() methods can be used to remove array elements.</h3>
+    <p id="res2"></p>
+    <button onclick="f2()">Remove Last Items</button>
+
+    <script type="text/javascript">
+    	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("arr").innerHTML = fruits;
+  
+    	function f() {
+        fruits.splice(2, 0, "Lemon");
+        document.getElementById("res").innerHTML ="After Splice: <h3>"+ fruits+"</h3>";
+    	}
+
+        document.getElementById("arr1").innerHTML = fruits;
+        function f1() {
+        fruits.splice(0, 1);
+        document.getElementById("res1").innerHTML ="After Splice: <h3>"+ fruits+"</h3>";
+    	}
+
+        document.getElementById("arr2").innerHTML = fruits;
+        function f2() {
+        fruits.splice(3, 1);
+        document.getElementById("res2").innerHTML ="After Splice: <h3>"+ fruits+"</h3>";
+        }
+    </script>
+</body>
+</html>

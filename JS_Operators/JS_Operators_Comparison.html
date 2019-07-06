@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Comparison Operators</title>
+	<style>
+		#dis{
+			background-color: seagreen;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h3>Comparison operators are used in logical statements to determine equality or difference between variables or values</h3>
+			<div id="dis">
+				<h1 id="display"></h1>
+			</div>
+			<br><br><br>
+			<div align="center">
+				<button onclick="f1()">Comparison(==) btwn Amit, 5</button><br><br>
+				<button onclick="f2()">Comparison(===) btwn 5, 10</button><br><br>
+				<button onclick="f3()">Comparison(!=) of 5, Amit</button><br><br>
+				<button onclick="f4()">Comparison(!==) of 5, 10</button><br><br>
+				<button onclick="f5()">Comparison(>) of 5, 7</button><br><br>
+				<button onclick="f6()">Comparison(<) of 5, 7</button><br><br>
+				<button onclick="f7()">Comparison(>=) of 7, 5</button><br><br>
+				<button onclick="f8()">Comparison(<=) of 7, 5</button><br><br>
+			</div>
+</body>
+		<script>
+
+		var output;
+		function f1() {
+		    var x = 5;
+		    if(x=='Amit')
+		    {
+		    	output= "X==Amit is true";	
+		    }
+		    else{
+		    	output= "X==Amit is false";
+		    }
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function f2() {
+		    var x = 5;
+		    if(x === 10)
+		    {
+		    	output= "5===10 is true";	
+		    }
+		    else{
+		    	output= "5===10 is false";
+		    }
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function f3() {
+		    var x = 5;
+		    if(x != 'Amit')
+		    {
+		    	output= "5!=Amit is true";	
+		    }
+		    else{
+		    	output= "5!=Amit is false";
+		    }
+		    document.getElementById('display').innerHTML = output;
+		}		
+
+		function f4() {
+		    var x = 5;
+		    if(x !== 10)
+		    {
+		    	output= "5!==Amit is true";	
+		    }
+		    else{
+		    	output= "5!==Amit is false";
+		    }		    
+		    document.getElementById('display').innerHTML = output;
+		}		
+
+		function f5() {
+		    var x = 5;
+		    var y = 7;
+		    if(x > y)
+		    {
+		    	output= "5>7 is true";	
+		    }
+		    else{
+		    	output= "5>7 is false";
+		    }
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function f6() {
+		    var x = 5;
+		    var y = 7;
+		    if(x < y)
+		    {
+		    	output= "5<7 is true";	
+		    }
+		    else{
+		    	output= "5<7 is false";
+		    }
+		    document.getElementById('display').innerHTML = output;
+		}		
+
+		function f7() {
+		    var x = 7;
+		    if(x >= 5)
+		    {
+		    	output= "7>=5 is true";	
+		    }
+		    else{
+		    	output= "7>=5 is false";
+		    }
+		    document.getElementById('display').innerHTML = output;
+		}
+
+		function f8() {
+		    var x = 7;
+		    if(x <= 5)
+		    {
+		    	output= "7<=5 is true";	
+		    }
+		    else{
+		    	output= "7<=5 is false";
+		    }		    
+		    document.getElementById('display').innerHTML = output;
+		}
+		
+		</script>
+</html>

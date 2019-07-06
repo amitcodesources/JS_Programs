@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nth-child</title>
+	<style type="text/css">
+		p:nth-child(2){
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<p>The first paragraph.</p>
+	<p>The second paragraph.</p>
+	<p>The third paragraph.</p>
+	<p>The fourth paragraph.</p>
+	<script type="text/javascript">
+		document.querySelector('p:nth-child(2)').style.color = 'red';
+	</script>
+</body>
+</html>

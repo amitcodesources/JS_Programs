@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Object Assign</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const target = {a:1, b:2};
+		const source = {b:4, c:5};
+
+		const resTarget = Object.assign(target, source);
+
+		document.write("<h3>The Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object.</h3>");
+		console.log(target);
+		console.log(resTarget);
+	</script>
+</body>
+</html>

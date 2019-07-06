@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array slice()</title>
+</head>
+<body>
+    <h2>slice() method slices out a piece of an array into a new array.</h2>
+    <h4>This example slices out a part of an array starting from array element 1 ("Orange"):</h4>
+    <p id="demo1"></p>
+
+    <br><br>
+    <h4>This  example slices out a part of an array starting from array element 3 ("Apple")</h4>
+    <p id="demo2"></p>
+
+    <br><br>
+    <h4>When the slice() method is given two arguments, it selects array elements from the start argument, and up to (but not included) the end argument:</h4>
+    <p id="demo3"></p>
+
+    <script type="text/javascript">
+    	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    	var res1 = fruits.slice(1);
+    	document.getElementById("demo1").innerHTML = fruits + "<br><br>" + res1;
+
+    	var res2 = fruits.slice(2);
+    	document.getElementById("demo2").innerHTML = fruits + "<br><br>" + res2;
+
+    	var res3 = fruits.slice(1, 2);
+    	document.getElementById("demo3").innerHTML = fruits + "<br><br>" + res3;
+    </script>
+</body>
+</html>

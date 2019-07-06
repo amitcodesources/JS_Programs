@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Freeze</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const frozenObject = {
+		  name: 'Robert'
+		}
+
+		Object.freeze(frozenObject);
+
+		frozenObject.name = 'Henry';
+
+		document.write("<h3>Object.freeze() prevents you from modifying existing object properties or adding new properties and values to an object</h3>");
+
+		document.write(frozenObject.name);
+	</script>
+</body>
+</html>

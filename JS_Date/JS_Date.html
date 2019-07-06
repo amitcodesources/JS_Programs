@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Date</title>
+</head>
+<body>
+        <h1>JavaScript Date</h1>
+
+        <h3>Show Current Date</h3>
+        <p id="demo1"></p>
+
+        <h3>A Date object can be created with a specified date and time:</h3>
+        <p>7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):</p>
+        <p id="demo2"></p>
+
+        <h3>A Date object can be created with a specified date and time:</h3>
+        <p>3 numbers specify year, month, day:</p>
+        <p id="demo3"></p>
+
+        <h3>A Date object can be created with a specified date and time::</h3>
+        <p id="demo4"></p>
+
+        <h3>Using new Date(milliseconds), creates a new date object as January 1, 1970, 00:00:00 Universal Time (UTC) plus the milliseconds:</h3>
+        <p id="demo5"></p>
+
+        <h3>The toUTCString() method converts a date to a UTC string (a date display standard):</h3>
+        <p id="demo6"></p>
+
+        <h3>The toDateString() method converts a date to a date string:</h3>
+        <p id="demo7"></p>
+
+
+        <h1>Previous Century</h1>
+
+        <h3>Two digit years will be interpreted as 19xx:</h3>
+        <p id="demo8"></p>
+
+        <h3>One digit years will be interpreted as 19xx:</h3>
+        <p id="demo9"></p>
+
+</body>
+        <script>
+
+                var d = new Date();
+                document.getElementById("demo1").innerHTML = d;
+
+                var d1 = new Date(2018, 11, 24, 10, 33, 30, 0);
+                document.getElementById("demo2").innerHTML = d1;
+
+                var d2 = new Date(2018, 11, 24);
+                document.getElementById("demo3").innerHTML = d2;
+
+                var d3 = new Date("October 13, 2014 11:13:00");
+                document.getElementById("demo4").innerHTML = d3;
+
+                var d4 = new Date(0);
+                document.getElementById("demo5").innerHTML = d4;
+
+                var d5 = new Date();
+                document.getElementById("demo6").innerHTML = d5.toUTCString();
+
+                var d6 = new Date();
+                document.getElementById("demo7").innerHTML = d6.toDateString();
+
+
+
+
+
+                var d7 = new Date(99, 11, 24);
+                document.getElementById("demo8").innerHTML = d7;
+
+                var d8 = new Date(9, 11, 24);
+                document.getElementById("demo9").innerHTML = d8;
+        </script>
+</html>

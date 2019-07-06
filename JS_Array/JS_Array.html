@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Array</title>
+</head>
+<body>
+        <div align="center">
+            <h1>JavaScript Arrays</h1>
+
+            <h4>Creating an Array</h4>
+            <p id="demo1"></p>
+
+            <h4>Using the JavaScript Keyword new</h4>
+            <p id="demo2"></p>
+
+            <h4>Access the Elements of an Array</h4>
+            <p>JavaScript array elements are accesses using numeric indexes (starting from 0).</p>
+            <p id="demo3"></p>
+            <p id="demolast"></p>
+
+            <h4>JavaScript Objects</h4>
+            <p>JavaScript uses names to access object properties.</p>
+            <p id="demo4"></p>
+
+            <h4>Change the Element of an Array</h4>
+            <p id="demo5"></p>
+            <p>JavaScript array elements are changed by array index</p>
+            <button onclick="fnChange()">Change Items</button>
+
+            <h4>Delete the Element of an Array</h4>
+            <p id="demo6"></p>
+            <p>JavaScript array elements are deleted using delete keyword</p>
+            <p id="demo7"></p>
+            <button onclick="fnDelete()">Delete Item (BMW)</button>
+
+        </div>
+
+            <script>
+                var cars = ["Ferrari", "Buggati", "BMW"];
+                document.getElementById("demo1").innerHTML = cars;
+
+                var cars1 = new Array("Ferrari", "Buggati", "BMW");
+                document.getElementById("demo2").innerHTML = cars1;
+
+                document.getElementById("demo3").innerHTML = "First Array Element: "+ cars[0];
+                document.getElementById("demolast").innerHTML = "Lasst Array Element: "+ cars[cars.length-1];
+
+                var person = {firstName:"John", lastName:"Doe", age:46};
+                document.getElementById("demo4").innerHTML = person["firstName"];
+
+				document.getElementById("demo5").innerHTML = cars;
+                function fnChange(){
+                	cars[0] = "Amit";
+                	cars[1] = "Amit1";
+                	cars[2] = "Amit2";
+                	document.getElementById("demo5").innerHTML = cars;
+                }
+
+
+				document.getElementById("demo6").innerHTML = cars;
+                function fnDelete(){
+                	delete cars[2];
+                	document.getElementById("demo6").innerHTML = cars;
+                }
+            </script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lastIndexOf() demo</title>
+</head>
+<body>	
+	<h2>Array.lastIndexOf() is the same as Array.indexOf(), but searches from the end of the array.</h2>
+	<p id="demo1"></p>
+
+	<script>
+	var fruits = ["Apple", "Orange", "Apple", "Mango"];
+	var a = fruits.lastIndexOf("Apple");
+	document.getElementById("demo1").innerHTML = "Apple is found in position " +a;
+	</script>
+
+	<p>The lastIndexOf() does not work in Internet Explorer 8 and earlier versions.</p>
+
+</body>
+</html>

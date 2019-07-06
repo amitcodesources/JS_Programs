@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>repeat()</title>
+</head>
+<body>
+	<h1>The repeat() method returns a new string with a specified number of copies of the string it was called on.</h1>
+	<p>Click the button to display the extracted part of the string.</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<p><strong>Note:</strong> The repeat() method is not supported in IE 11 (and earlier versions).</p>
+
+	<script>
+	function myFunction() {
+	  var str = "Hello world!";
+	  document.getElementById("demo").innerHTML = str.repeat(2);
+	}
+	</script>
+</body>
+</html>

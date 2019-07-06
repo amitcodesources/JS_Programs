@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Operator Delete</title>
+</head>
+<body onload="f1()">
+	<h3>The delete operator deletes a property from an object</h3>
+	<script type="text/javascript">
+		function f1() {
+			var product = {Id:1, Name:"TV", Price:25000};
+			delete product.Price;
+			var price;
+			(product.Price == undefined)? Price="Price Not Available":price=product.Price;
+			document.write("Id: "+product.Id+"<br>"+"Name: "+product.Name+"<br>"+"Price: "+price);
+		}
+	</script>
+</body>
+</html>

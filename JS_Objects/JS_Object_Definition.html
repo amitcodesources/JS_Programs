@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Object_Definition</title>
+</head>
+<body>
+        <div align="center">
+            <h2>Creating a JavaScript Object.</h2>
+            <h1>Object Creation By Literal</h1>
+            <p id="demo1"></p>
+            <h1>Object Creation With new keyword</h1>
+            <p id="demo2"></p>
+            <h1>Object Creation By Constructor</h1>
+            <p id="demo3"></p>
+        </div>
+
+        <script>
+            var person1 = {
+                firstName : "John",
+                lastName  : "Doe",
+                age       : 50,
+                eyeColor  : "blue"
+            };
+
+            document.getElementById("demo1").innerHTML = person1.firstName+" "+person1.lastName+" aged "+person1.age+" having "+person1.eyeColor+" color eye";
+        </script>
+
+        <script>
+            var person2 = new Object();
+			person2.firstName = "Will";
+            person2.lastName  = "Smith";
+            person2.age = 60;
+            person2.eyeColor  = "black";
+
+            document.getElementById("demo2").innerHTML = person2.firstName+" "+person2.lastName+" aged "+person2.age+" having "+person2.eyeColor+" color eye";
+        </script>
+
+        <script type="text/javascript">
+
+        	// Constructor function for Person objects
+        	function person3(fname, lname, age, eyeC){
+        		this.firstName = fname;
+        		this.lastName = lname;
+        		this.age = age;
+        		this.eyeColor = eyeC;
+        		this.fullName = function(){
+        			return this.firstName + "  " +this.lastName;
+        		}
+        	}
+
+        	var myData = new person3('Amit', 'Kumar', 25, 'black');
+
+        	document.getElementById("demo3").innerHTML = myData.firstName+" "+myData.lastName+" aged "+myData.age+" having "+myData.eyeColor+" color eye"+" and his fullName is "+myData.fullName();
+        </script>
+</body>
+</html>

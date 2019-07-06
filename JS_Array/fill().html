@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fill()</title>
+</head>
+<body>
+	<h1>The fill() method fills all the elements in an array with a static value.</h1>
+	
+	<h3>It is possible to specify the index for starting and ending fill(). By default it changes the whole array.</h3>
+
+	<p id="demo1"></p>
+	<button onclick="f1()">Fill Kiwi</button>
+
+	<h3>array.fill(value, start, end)</h3>
+	<h4>value-(Required)The value to fill the array with</h4>
+	<h4>start-(Optional)The index to start filling the array (default is 0)</h4>
+	<h4>end-(Optional)The index to stop filling the array(default is array.length)</h4>
+	<p id="demo2"></p>
+	<button onclick="f2()">Fill 100</button>
+
+	<script type="text/javascript">
+		var fruits = ['Apple', 'Banana', 'Grapes', 'Lichi'];
+
+		var nums = [10, 20, 30, 40, 50];
+
+		document.getElementById('demo1').innerHTML = fruits;
+		document.getElementById('demo2').innerHTML = nums;
+
+		function f1() {
+				document.getElementById('demo1').innerHTML = fruits.fill('Kiwi');
+		}
+
+		function f2() {
+				document.getElementById('demo2').innerHTML = nums.fill(100, 1, 4);
+		}
+
+	</script>
+</body>
+</html>

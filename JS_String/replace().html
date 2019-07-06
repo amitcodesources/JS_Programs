@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>replace()</title>
+</head>
+<body>
+		<h1>The replace() method replaces a specified value with another value in a string</h1>
+		<h3>Replacing String Content By [.replace()]</h3>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+    <p id="demo1">Please visit Microsoft!</p>
+    <button onclick="f1()">Repalce</button>
+
+    <h3>Replacing String Content By [.replace()]</h3>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+    <p>By default, the replace() function replaces only the first match:</p>
+    <p id="demo2">Please visit Microsoft and Microsoft!</p>
+    <button onclick="f2()">Repalce</button>
+
+    <h3>Replacing String Content By [.replace()]</h3>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+    <p>By default, the replace() function is case sensitive. Writing MICROSOFT (with upper-case) will not work:</p>
+    <p id="demo3">Please visit Microsoft and Microsoft!</p>
+    <button onclick="f3()">Repalce</button>
+
+    <h3>Replacing String Content By [.replace()]</h3>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+    <p>To replace case insensitive, use a regular expression with an /i flag (insensitive):</p>
+    <p id="demo4">Please visit Microsoft and Microsoft!</p>
+    <button onclick="f4()">Repalce</button>
+
+    <h3>Replacing String Content By [.replace()]</h3>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+    <p>To replace all matches, use a regular expression with a /g flag (global match):</p>
+    <p id="demo5">Please visit Microsoft and Microsoft!</p>
+    <button onclick="f5()">Repalce</button>
+
+    <script type="text/javascript">
+    	function f1() {
+        var str = document.getElementById("demo1").innerHTML;
+        var txt = str.replace("Microsoft","W3Schools");
+        document.getElementById("demo1").innerHTML = txt;
+    }
+
+    function f2() {
+        var str = document.getElementById("demo2").innerHTML;
+        var txt = str.replace("Microsoft","W3Schools");
+        document.getElementById("demo2").innerHTML = txt;
+    }
+
+    function f3() {
+        var str = document.getElementById("demo3").innerHTML;
+        var txt = str.replace("MICROSOFT","W3Schools");
+        document.getElementById("demo3").innerHTML = txt;
+    }
+
+    function f4() {
+        var str = document.getElementById("demo4").innerHTML;
+        var txt = str.replace(/MICROSOFT/i,"W3Schools");
+        document.getElementById("demo4").innerHTML = txt;
+    }
+
+    function f5() {
+        var str = document.getElementById("demo5").innerHTML;
+        var txt = str.replace(/Microsoft/g,"W3Schools");
+        document.getElementById("demo5").innerHTML = txt;
+    }
+    </script>
+</body>
+</html>
